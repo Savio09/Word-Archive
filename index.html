@@ -86,7 +86,8 @@
                 document.querySelector('.output').innerHTML = output;
             })
             .catch(err => document.querySelector('.output').innerHTML =
-                'This word is not found. Please, check the spelling of the word and try again!')
+                `This word. ${search.value}, was not found. Please, check the spelling of the word and try again!`
+            )
     }
 </script>
 <script src="https://kit.fontawesome.com/4c0c5e2d66.js" crossorigin="anonymous"></script>
