@@ -30,6 +30,6 @@ function query(e) {
             document.querySelector('.output').innerHTML = output;
         })
         .catch(err => document.querySelector('.output').innerHTML =
-            `This word. ${search.value}, was not found. Please, check the spelling of the word and try again!`
+            `This word, ${search.value}, was not found. Please, check the spelling of the word and try again!`
         )
 }
