@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!--Logo-->
+            <div>
+                <i class="fa-solid fa-book-atlas logo"></i>
+            </div>
+            <div class="right">
+                <!--Font Selection-->
+                <div class="font-select">
+                    <select name="select" id="select">
+                        <option value="sans-serif">Serif</option>
+                        <option value="montserrat">Montserrat</option>
+                        <option value="raleway">Raleway</option>
+                        <option value="cursive">Cursive</option>
+                        <option value="lato">Lato</option>
+                        <option value="Roboto">Roboto</option>
+                    </select>
+                </div>
+                <!--Modes-->
+                <div class="modes">
+                    <i class="fa-solid fa-toggle-off set"></i>
+                    <i class="fa-regular fa-moon set"></i>
+                </div>
+            </div>
+        </header>
+
+        <form action="">
+            <div class="search-area">
+                <input type="search" name="search" id="search">
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="output"></div>
+        </form>
+    </div>
+
+</body>
+
+<script>
+    let search = document.querySelector('#search')
+    let searchBtn = document.querySelector('#search-btn')
+    let font = document.querySelector('select')
+    let body = document.querySelector('body')
+
+    font.onchange = function () {
+        body.style.fontFamily = font.value;
+    }
+
+    searchBtn.addEventListener('click', query)
+
+    function query(e) {
+        e.preventDefault();
+        fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${search.value}`)
+            .then(res => res.json())
+            .then(data => {
+                let output = `
+                <h1 class="title">${search.value}</h1>
+                <button><i class="fa-solid fa-play"></i></button>
+                `
+                data.forEach((uniqueRes, index) => {
+                    let meaning = uniqueRes.meanings
+
+                    meaning.forEach((def, index) => {
+                        def.definitions.forEach(definition => {
+                            //console.log(definition.definition)
+                            output += `<p>${definition.definition}</p>`
+                        })
+                    })
+                });
+                document.querySelector('.output').innerHTML = output;
+            })
+            .catch(err => document.querySelector('.output').innerHTML =
+                'This word is not found. Please, check the spelling of the word and try again!')
+    }
+</script>
+<script src="https://kit.fontawesome.com/4c0c5e2d66.js" crossorigin="anonymous"></script>
+
+</html>
