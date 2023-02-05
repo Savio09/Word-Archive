@@ -3,9 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: serif;
+    font-family: 'Source Serif Pro', serif;
 }
+
 select {
     border: 0;
     background: transparent;
@@ -78,8 +80,40 @@ header {
     font-size: 20px;
 }
 
+.result {
+    height: 10vh;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #E9D0FA;
+}
+
+.fa-play {
+    font-size: 15px;
+    color: #A545EF;
+}
+
+.transcript {
+    color: #A545EF;
+}
+
+.multiple:first-child{
+    color: red;
+}
+.verb {
+    background-color: red;
+}
 @media screen and (max-width: 800px){
     .container{
         width: 90%;
     }
 }
+
