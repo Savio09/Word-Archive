@@ -32,7 +32,8 @@
     let play = document.querySelector('.play')
     let audio= new Audio("https:"+ data[0].phonetics[0].audio)
     play.onclick = () => {
-    audio.play();
+    alert(data[0].phonetics[0].audio)
+    //audio.play();
     }
     data.forEach((uniqueRes, index) => {
         let meaning = uniqueRes.meanings;
