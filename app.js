@@ -2,12 +2,10 @@
     let searchBtn = document.querySelector('#search-btn')
     let font = document.querySelector('select')
     let body = document.querySelector('body')
+    let play = document.querySelector('#play')
    
     
     
-    
-
-
     font.onchange = () => {
     console.log(font.value)
     body.style.fontFamily = font.value;
@@ -29,8 +27,7 @@
         <button class="play" id="play"><i class="fa-solid fa-play"></i></button>
     </div>
     `
-    let play = document.querySelector('.play')
-    let audio= new Audio("https:"+ data[0].phonetics[0].audio)
+    //let audio= new Audio("https:"+ data[0].phonetics[0].audio)
     play.onclick = () => {
     alert(data[0].phonetics[0].audio)
     //audio.play();
