@@ -2,6 +2,11 @@
     let searchBtn = document.querySelector('#search-btn')
     let font = document.querySelector('select')
     let body = document.querySelector('body')
+   
+    
+    
+    
+
 
     font.onchange = () => {
     console.log(font.value)
@@ -24,6 +29,11 @@
         <button class="play" id="play"><i class="fa-solid fa-play"></i></button>
     </div>
     `
+    let play = document.querySelector('.play')
+    let audio= new Audio(`https:${data[0].phonetics[0].audio}`)
+    play.onclick = () => {
+    audio.play();
+    }
     data.forEach((uniqueRes, index) => {
         let meaning = uniqueRes.meanings;
         meaning.forEach((def, index) => {
