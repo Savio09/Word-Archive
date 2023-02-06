@@ -5,6 +5,7 @@ let body = document.querySelector('body')
 let toggle = document.querySelector('.toggle');
 
 toggle.addEventListener('click', () => {
+    e.preventDefault();
     body.classList.toggle("dark-mode")
 })
 
