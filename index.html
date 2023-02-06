@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto:wght@300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Lobster+Two&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto:wght@300&family=Source+Serif+Pro:wght@600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,14 +18,15 @@
     <div class="container">
         <header>
             <!--Logo-->
-            <div>
+            <div class="logo-container">
                 <i class="fa-solid fa-book-atlas logo"></i>
+                <h2>Wordles</h2>
             </div>
             <div class="right">
                 <!--Font Selection-->
                 <div class="font-select">
                     <select name="select" id="select">
-                        <option value="sans-serif">Serif</option>
+                        <option value="Source Serif Pro">Serif</option>
                         <option value="montserrat">Montserrat</option>
                         <option value="raleway">Raleway</option>
                         <option value="cursive">Cursive</option>
@@ -35,7 +36,10 @@
                 </div>
                 <!--Modes-->
                 <div class="modes">
-                    <i class="fa-solid fa-toggle-off set"></i>
+                    <label class="switch set">
+                        <input type="checkbox" class="toggle">
+                        <span class="slider"></span>
+                    </label>
                     <i class="fa-regular fa-moon set"></i>
                 </div>
             </div>
@@ -43,7 +47,7 @@
 
         <form action="">
             <div class="search-area">
-                <input type="search" name="search" id="search">
+                <input type="text" name="search" id="search">
                 <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </form>
@@ -51,7 +55,3 @@
     </div>
 
 </body>
-<script src="https://kit.fontawesome.com/4c0c5e2d66.js" crossorigin="anonymous"></script>
-<script src="./app.js"></script>
-
-</html>

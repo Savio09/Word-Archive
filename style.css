@@ -6,15 +6,34 @@
 
 body {
     font-family: 'Source Serif Pro', serif;
+    min-height: 100vh;
+    background: #24CEE0;
+    color: #2B2F35;
 }
+
+.dark-mode {
+    transition: all 0.5s ease;
+    color: #24CEE0;
+    background: #2B2F35;
+    box-shadow:  20px 20px 60px #25282d, -20px -20px 60px #31363d;
+}
+
 
 select {
     border: 0;
     background: transparent;
+    color: #24CEE0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     font-size: 40px;
+    margin-right: 5px;
+    font-family: 'Poppins';
 }
 
 .container {
@@ -28,12 +47,69 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 30px 0;
-    background-color: aliceblue;
-
 }
 
 .right {
     display: flex;
+}
+
+.modes {
+    display: flex;
+}
+
+/* The switch - the box around the slider */
+.switch.set {
+ font-size: 10px;
+ position: relative;
+ display: inline-block;
+ width: 3.5em;
+ height: 2em;
+ text-align: center;
+ margin-left: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+/* The slider */
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #ccc;
+ transition: .4s;
+ border-radius: 30px;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 1.4em;
+ width: 1.4em;
+ border-radius: 20px;
+ left: 0.3em;
+ bottom: 0.3em;
+ background-color: white;
+ transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: rgb(0,221,80);
+}
+
+input:focus + .slider {
+ box-shadow: 0 0 1px rgb(0,221,80);
+}
+
+input:checked + .slider:before {
+ transform: translateX(1.5em);
 }
 
 .font-select {
@@ -46,9 +122,6 @@ header {
     margin-right: 10px;
 }
 
-.set:first-child {
-    margin-left: 20px;
-}
 
 .search-area {
     background-color: #f4f4f4;
@@ -105,11 +178,14 @@ header {
     color: #A545EF;
 }
 
-.multiple:first-child{
-    color: red;
+h3 {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 15px;
 }
-.verb {
-    background-color: red;
+
+.definition {
+    font-size: 14px;
 }
 @media screen and (max-width: 800px){
     .container{
