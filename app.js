@@ -1,8 +1,8 @@
-let search = document.querySelector('#search'),
-    searchBtn = document.querySelector('#search-btn'),
-    font = document.querySelector('select'),
-    body = document.querySelector('body'),
-    toggle = document.querySelector('.toggle');
+let search = document.querySelector('#search')
+let searchBtn = document.querySelector('#search-btn')
+let font = document.querySelector('select')
+let body = document.querySelector('body')
+let toggle = document.querySelector('.toggle');
 
 toggle.addEventListener('click', () => {
     body.classList.toggle("dark-mode")
