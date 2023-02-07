@@ -7,6 +7,8 @@
 
     toggle.addEventListener('click', () => {
         body.classList.toggle("dark-mode")
+        body.querySelector('.cover').classList.toggle('dark-mode')
+        font.classList.toggle("dark-mode")
     })
 
     font.onchange = () => {
