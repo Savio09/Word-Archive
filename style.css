@@ -190,7 +190,8 @@ input:checked + .slider:before {
 h3 {
     text-transform: capitalize;
     font-weight: 800;
-    font-size: 15px;
+    font-size: 16px;
+    margin: 10px 0;
 }
 
 .definition {
