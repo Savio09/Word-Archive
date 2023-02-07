@@ -16,41 +16,43 @@
 
 <body>
     <div class="container">
-        <header>
-            <!--Logo-->
-            <div class="logo-container">
-                <i class="fa-solid fa-book-atlas logo"></i>
-                <h2>Wordles</h2>
-            </div>
-            <div class="right">
-                <!--Font Selection-->
-                <div class="font-select">
-                    <select name="select" id="select">
-                        <option value="Source Serif Pro">Serif</option>
-                        <option value="montserrat">Montserrat</option>
-                        <option value="raleway">Raleway</option>
-                        <option value="cursive">Cursive</option>
-                        <option value="lato">Lato</option>
-                        <option value="Roboto">Roboto</option>
-                    </select>
+        <div class="cover">
+            <header>
+                <!--Logo-->
+                <div class="logo-container">
+                    <i class="fa-solid fa-book-atlas logo"></i>
+                    <h2>Wordles</h2>
                 </div>
-                <!--Modes-->
-                <div class="modes">
-                    <label class="switch set">
-                        <input type="checkbox" class="toggle">
-                        <span class="slider"></span>
-                    </label>
-                    <i class="fa-regular fa-moon set"></i>
+                <div class="right">
+                    <!--Font Selection-->
+                    <div class="font-select">
+                        <select name="select" id="select">
+                            <option value="Source Serif Pro">Serif</option>
+                            <option value="montserrat">Montserrat</option>
+                            <option value="raleway">Raleway</option>
+                            <option value="cursive">Cursive</option>
+                            <option value="lato">Lato</option>
+                            <option value="Roboto">Roboto</option>
+                        </select>
+                    </div>
+                    <!--Modes-->
+                    <div class="modes">
+                        <label class="switch set">
+                            <input type="checkbox" class="toggle">
+                            <span class="slider"></span>
+                        </label>
+                        <i class="fa-regular fa-moon set"></i>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
-        <form action="">
-            <div class="search-area">
-                <input type="text" name="search" id="search">
-                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-        </form>
+            <form action="">
+                <div class="search-area">
+                    <input type="text" name="search" id="search">
+                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+        </div>
         <div class="output"></div>
     </div>
 
