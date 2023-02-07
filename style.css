@@ -7,13 +7,13 @@
 body {
     font-family: 'Source Serif Pro', serif;
     min-height: 100vh;
-    background: #24CEE0;
+    background: #EAEAEA;
     color: #2B2F35;
 }
 
 .dark-mode {
     transition: all 0.5s ease;
-    color: #24CEE0;
+    color: #EAEAEA;
     background: #2B2F35;
     box-shadow:  20px 20px 60px #25282d, -20px -20px 60px #31363d;
 }
