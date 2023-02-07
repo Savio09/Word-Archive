@@ -12,17 +12,24 @@ body {
 }
 
 .dark-mode {
-    transition: all 0.5s ease;
     color: #EAEAEA;
     background: #2B2F35;
     box-shadow:  20px 20px 60px #25282d, -20px -20px 60px #31363d;
+    transition: all 0.3s ease;
 }
 
+.dark-mode .cover {
+    background: #2B2F35;
+    transition-delay: 0.3s;
+    transition: all 0.2s;
+}
+.dark-mode .font {
+    color: #EAEAEA;
+}
 
 select {
     border: 0;
     background: transparent;
-    color: #2B2F35;
 }
 
 .logo-container {
@@ -40,6 +47,7 @@ select {
     width: 40%;
     margin: 0 auto;
     height: 100%;
+    padding: 0 20px;
 }
 
 header {
@@ -52,9 +60,13 @@ header {
 .cover{
     position: -webkit-sticky;
     position: sticky;
-    top: 10px;
+    top: 0;
     z-index: 1;
-    background-color: #EAEAEA;
+    background: #EAEAEA;
+}
+
+.output {
+    min-height: 80vh;
 }
 
 .right {
@@ -196,6 +208,7 @@ h3 {
 .definition {
     font-size: 14px;
 }
+
 @media screen and (max-width: 800px){
     .container{
         width: 90%;
