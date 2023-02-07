@@ -11,6 +11,11 @@ body {
     color: #2B2F35;
 }
 
+a {
+    color: #A545EF;
+    text-decoration: underline;
+}
+
 li {
     margin-top: 5px;
 }
@@ -38,7 +43,9 @@ select {
     transition-delay: 0.3s;
     transition: all 0.2s;
 }
-.dark-mode .font {
+
+.dark-mode .font,
+.dark-mode a {
     color: #EAEAEA;
 }
 
