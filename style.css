@@ -14,7 +14,6 @@ body {
 .dark-mode {
     color: #EAEAEA;
     background: #2B2F35;
-    box-shadow:  20px 20px 60px #25282d, -20px -20px 60px #31363d;
     transition: all 0.3s ease;
 }
 
