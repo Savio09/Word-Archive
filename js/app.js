@@ -14,7 +14,7 @@ toggle.addEventListener('click', () => {
 
 // Select font styles
 font.onchange = () => {
-    body.style.fontFamily = font.value;
+    body.querySelector(".output").style.fontFamily = font.value;
 }
 
 // Search Item function
