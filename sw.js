@@ -1,8 +1,8 @@
 const staticCache = 'site-static'
 const appShellAssets = [
-    "/",
-    "/index.html",
-    "/style.css",
+    "./",
+    "./index.html",
+    "./style.css",
     "https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Lobster+Two&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto:wght@300&family=Source+Serif+Pro:wght@600&display=swap",
     "https://kit.fontawesome.com/4c0c5e2d66.js"
 ]
