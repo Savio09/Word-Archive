@@ -1,10 +1,10 @@
 {
     "name": "Word Archive",
-    "short_name": "WA",
+    "short_name": "Word Archive",
     "start_url": "/index.html",
     "display": "standalone",
-    "theme_color": "#2B2F35",
-    "background_color": "#2B2F35",
+    "theme_color": "#EAEAEA",
+    "background_color": "#EAEAEA",
     "orientation": "portrait-primary",
     "icons": [
         {
