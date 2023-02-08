@@ -1,7 +1,7 @@
 {
     "name": "Word Archive",
     "short_name": "Word Archive",
-    "start_url": "/index.html",
+    "start_url": "/Word-Archive/",
     "display": "standalone",
     "theme_color": "#EAEAEA",
     "background_color": "#EAEAEA",
