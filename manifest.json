@@ -1,6 +1,6 @@
 {
-    "name": "Word Archive",
-    "short_name": "Word Archive",
+    "name": "Dictionary WA",
+    "short_name": "Dictionary WA",
     "start_url": "/Word-Archive/",
     "display": "standalone",
     "theme_color": "#EAEAEA",
