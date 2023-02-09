@@ -204,6 +204,7 @@ input:checked + .slider:before {
     border-radius: 50%;
     border: 0;
     background-color: #E9D0FA;
+    outline: none;
 }
 
 .fa-play {
@@ -225,3 +226,8 @@ input:checked + .slider:before {
     }
 }
 
+@media screen and (max-width: 500px){
+    .container {
+        width: 100%;
+    }
+}
