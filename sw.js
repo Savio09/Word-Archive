@@ -1,4 +1,4 @@
-//Caching App Assets and firing installation event
+//Caching App Assets and firing install event
 const staticCache = 'site-static'
 const appShellAssets = [
     "./",
