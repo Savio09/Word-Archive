@@ -132,7 +132,9 @@ function query(e) {
                 })
                 //Error if no result is found
                 .catch(err => document.querySelector('.output').innerHTML =
-                    `<p>This word, ${search.value}, is not found. Please, check the spelling of the word and try again!</p>`
+                    `<img src="./svgs/not-found.svg" class="svg">
+                    <p>This word, ${search.value}, is not found. Please, check the spelling of the word and try again!</p>
+                    `
                 )
     }
 }
