@@ -1,4 +1,4 @@
-//Cache App Assets and firing install events on service worker
+//Cache App Assets and firing install events on sw
 const staticCache = 'site-static'
 const appShellAssets = [
     "./",
