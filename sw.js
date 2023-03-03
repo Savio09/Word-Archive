@@ -1,4 +1,5 @@
-//Cache App Assets and firing install events on sw to update icons folder and files
+//Cache App Assets and firing install events on service worker
+// Updated icons folder and files
 const staticCache = 'site-static'
 const appShellAssets = [
     "./",
