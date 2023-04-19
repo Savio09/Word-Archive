@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Dictionary</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Lobster+Two&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto:wght@300&family=Source+Serif+Pro:wght@600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="manifest" href="./manifest.json">
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Lobster+Two&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto:wght@300&family=Source+Serif+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="manifest" href="./manifest.json" />
     <!--iOS SUPPORT-->
-    <link rel="apple-touch-icon" href="./icons/icon-96x96.png">
-    <link rel="apple-touch-icon" href="./icons/icon-128x128.png">
-    <meta name="apple-mobile-web-app-status-bar" content="#EAEAEA">
-    <meta name="theme-color" content="#2B2F35">
-</head>
+    <link rel="apple-touch-icon" href="./icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="./icons/icon-128x128.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#EAEAEA" />
+    <meta name="theme-color" content="#2B2F35" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="cover">
-            <header>
-                <!--Logo-->
-                <div class="logo-container">
-                    <i class="fa-solid fa-book-atlas logo"></i>
-                    <h2>WA</h2>
-                </div>
-                <div class="right">
-                    <!--Font Selection-->
-                    <div class="font-select">
-                        <select name="select" id="select">
-                            <option value="Source Serif Pro">Serif</option>
-                            <option value="montserrat">Montserrat</option>
-                            <option value="raleway">Raleway</option>
-                            <option value="cursive">Cursive</option>
-                            <option value="lato">Lato</option>
-                            <option value="Roboto">Roboto</option>
-                        </select>
-                    </div>
-                    <!--Modes-->
-                    <div class="modes">
-                        <label class="switch set">
-                            <input type="checkbox" class="toggle">
-                            <span class="slider"></span>
-                        </label>
-                        <i class="fa-regular fa-moon set"></i>
-                    </div>
-                </div>
-            </header>
+      <div class="cover">
+        <header>
+          <!--Logo-->
+          <div class="logo-container">
+            <i class="fa-solid fa-book-atlas logo"></i>
+            <h2>WA</h2>
+          </div>
+          <div class="right">
+            <!--Font Selection-->
+            <div class="font-select">
+              <select name="select" id="select">
+                <option value="Source Serif Pro">Serif</option>
+                <option value="montserrat">Montserrat</option>
+                <option value="raleway">Raleway</option>
+                <option value="cursive">Cursive</option>
+                <option value="lato">Lato</option>
+                <option value="Roboto">Roboto</option>
+              </select>
+            </div>
+            <!--Modes-->
+            <div class="modes">
+              <label class="switch set">
+                <input type="checkbox" class="toggle" />
+                <span class="slider"></span>
+              </label>
+              <i class="fa-regular fa-moon set"></i>
+            </div>
+          </div>
+        </header>
 
-            <form action="">
-                <div class="search-area">
-                    <input type="text" name="search" id="search" placeholder="Enter a word...">
-                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-            </form>
-        </div>
-        <div class="output"></div>
-        <p style="text-align: center; margin: 20px 0;">Made with 💙 by <a
-                href="https://www.linkedin.com/in/declanfortune/" target="_blank">Fortune
-                Declan</a></p>
+        <form action="">
+          <div class="search-area">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Enter a word..."
+            />
+            <button id="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="output"></div>
+      <p style="text-align: center; margin: 20px 0">
+        Made with 💙 by
+        <a href="https://www.linkedin.com/in/declanfortune/" target="_blank"
+          >Fortune Declan</a
+        >
+      </p>
     </div>
+  </body>
 
-</body>
-
-<script src="./js/register.js"></script>
-<script src="./js/app.js"></script>
-<script src="https://kit.fontawesome.com/4c0c5e2d66.js" crossorigin="anonymous"></script>
-
+  <script src="./js/register.js"></script>
+  <script src="./js/app.js"></script>
+  <script
+    src="https://kit.fontawesome.com/4c0c5e2d66.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
