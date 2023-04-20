@@ -150,11 +150,15 @@ function query(e) {
         let sound = document.querySelector(".play");
         let state = document.querySelector("#state");
         sound.onclick = () => {
-          audio.play();
-          state.classList.replace("fa-play", "fa-pause");
-          audio.onended = function () {
-            state.classList.replace("fa-pause", "fa-play");
-          };
+          audio
+            .play()
+            .then(() => {
+              state.classList.replace("fa-play", "fa-pause");
+              audio.onended = function () {
+                state.classList.replace("fa-pause", "fa-play");
+              };
+            })
+            .catch((err) => console.log(err));
         };
       })
       //Error if no result is found
