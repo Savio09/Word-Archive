@@ -206,7 +206,8 @@ input:checked + .slider:before {
   outline: none;
 }
 
-.fa-play {
+.fa-play,
+.fa-pause {
   font-size: 15px;
   color: #a545ef;
 }
