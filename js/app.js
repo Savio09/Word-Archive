@@ -149,16 +149,25 @@ function query(e) {
         );
         let sound = document.querySelector(".play");
         let state = document.querySelector("#state");
+        let noAudio = document.querySelector(".no-sound");
         sound.onclick = () => {
+          noAudio.style.animation = "none";
           audio
             .play()
             .then(() => {
+              console.log(sound.nextElementSibling);
               state.classList.replace("fa-play", "fa-pause");
               audio.onended = function () {
                 state.classList.replace("fa-pause", "fa-play");
               };
             })
-            .catch((err) => console.log(err));
+            .catch((err) => {
+              console.log(err);
+              noAudio.style.animation = "fade 2s ease-in-out";
+              setInterval(() => {
+                noAudio.style.animation = "none";
+              }, 2000);
+            });
         };
       })
       //Error if no result is found

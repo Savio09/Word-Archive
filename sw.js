@@ -1,6 +1,6 @@
 //Cache App Assets and firing install events on service worker
 // Updated icons folder and files
-//Updating the js file
+//Updating the js/css files
 const staticCache = "site-static";
 const appShellAssets = [
   "./",
