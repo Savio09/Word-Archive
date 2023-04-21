@@ -162,11 +162,12 @@ function query(e) {
               };
             })
             .catch((err) => {
-              console.log(err);
-              noAudio.style.animation = "fade 2s ease-in-out";
-              setInterval(() => {
+              //Show no audio
+              noAudio.style.animation = "fade 2s linear";
+              const display = setInterval(() => {
                 noAudio.style.animation = "none";
-              }, 2000);
+                clearInterval(display);
+              }, 1000);
             });
         };
       })
