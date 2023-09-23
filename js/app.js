@@ -5,7 +5,9 @@ let search = document.querySelector("#search"),
   toggle = document.querySelector(".toggle"),
   bulb = document.querySelector(".bulb"),
   tip = document.querySelector(".tip")
-  token = "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";
+require('dotenv').config() 
+
+const token = process.env.API_KEY
 
 toggle.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
@@ -174,7 +176,23 @@ function query(e) {
             });
         };
         //Use word in a sentence
-        
+
+        tip.addEventListener("click", generateSentence)
+
+        function generateSentence() {
+          fetch("	https://api.openai.com/v1/chat/completions", {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer '+ token
+            },
+            body: JSON.stringify({
+              "model": "gpt-3.5-turbo",
+              "messages": [{"role": "user", "content": `generate a short sentence using ${search.value}`}]
+            })
+          }).then(res => res.json())
+          .then(data => console.log(data))
+        }
       })
       //Error if no result is found
       .catch(

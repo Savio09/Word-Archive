@@ -300,6 +300,10 @@ input:checked + .slider:before {
   align-items: center;
 }
 
+.tip:hover{
+  cursor: pointer;
+}
+
 @media screen and (max-width: 800px) {
   .container {
     width: 90%;
