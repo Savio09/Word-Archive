@@ -2,7 +2,10 @@ let search = document.querySelector("#search"),
   searchBtn = document.querySelector("#search-btn"),
   font = document.querySelector("select"),
   body = document.querySelector("body"),
-  toggle = document.querySelector(".toggle");
+  toggle = document.querySelector(".toggle"),
+  bulb = document.querySelector(".bulb"),
+  tip = document.querySelector(".tip")
+  token = "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";
 
 toggle.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
@@ -170,6 +173,8 @@ function query(e) {
               }, 1000);
             });
         };
+        //Use word in a sentence
+        
       })
       //Error if no result is found
       .catch(

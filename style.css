@@ -276,6 +276,30 @@ input:checked + .slider:before {
   font-size: 14px;
 }
 
+.bulb {
+  font-size: 36px;
+  color: white;
+}
+
+.tip p {
+  color: white;
+}
+
+.tip {
+  background: #6a6b6d;
+  backdrop-filter: blur(10px);
+  width: 160px;
+  height: 50px;
+  border-radius: 30px;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 800px) {
   .container {
     width: 90%;
