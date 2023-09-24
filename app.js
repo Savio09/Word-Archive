@@ -7,8 +7,6 @@ let search = document.querySelector("#search"),
   tip = document.querySelector(".tip")
 require('dotenv').config() 
 
-const token = process.env.API_KEY
-
 toggle.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
   body.querySelector(".cover").classList.toggle("dark-mode");
