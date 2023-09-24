@@ -5,7 +5,6 @@ let search = document.querySelector("#search"),
   toggle = document.querySelector(".toggle"),
   bulb = document.querySelector(".bulb"),
   tip = document.querySelector(".tip")
-require('dotenv').config() 
 
 toggle.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
